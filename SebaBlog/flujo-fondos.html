@@ -1,0 +1,121 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./resources/css/index.css" type="text/css" rel="stylesheet">
+    <title>Sebas Blog</title>
+</head>
+
+    <body>
+
+        <header>
+
+        </header>
+
+        <main id="flujo-fondos">
+
+            <div class="ingresos">
+
+                <label for="ingreso-1">Ingresos 1: </label><br>
+                <input id="ingreso-1" name="ingreso-1" type="number" placeholder="Puede ser cero o más..." min="0" step="100" value="0">
+                <br>
+                <br>
+
+                <label for="ingreso-2">Ingresos 2: </label><br>
+                <input id="ingreso-2" name="ingreso-2" type="number" placeholder="Puede ser cero o más..." min="0" step="100" value="0">
+                <br>
+                <br>
+
+                <label for="ingreso-3">Ingresos 3: </label><br>
+                <input id="ingreso-3" name="ingreso-3" type="number" placeholder="Puede ser cero o más..." min="0" step="100" value="0">
+                <br>
+                <br>
+                </div>
+
+            <div class="gastos">
+
+                <label for="gasto-1">Gasto 1: </label><br>
+                <input id="gasto-1" name="gasto-1" type="number" placeholder="Puede ser cero o más..." min="0" step="100" value="0">
+                <br>
+                <br>
+
+                <label for="gasto-2">Gasto 2: </label><br>
+                <input id="gasto-2" name="gasto-2" type="number" placeholder="Puede ser cero o más..." min="0" step="100" value="0">
+                <br>
+                <br>
+
+                <label for="gasto-3">Gasto 3: </label><br>
+                <input id="gasto-3" name="gasto-3" type="number" placeholder="Puede ser cero o más..." min="0" step="100" value="0">
+                <br>
+                <br>
+                
+            </div>
+
+            <div class="cambios">
+
+                <label for="tiempo-flujo">Años Flujo: </label><br>
+                <input id="tiempo-flujo" name="tiempo-flujo" type="number" placeholder="Puede ser cero o más..." min="1" step="1" value="1">
+                <br>
+                <br>
+
+                <label for="perc-ingresos">Cambio % Ingresos: </label><br>
+                <input id="perc-ingresos" name="perc-ingresos" type="number" placeholder="Puede ser cero o más..." min="-100" max="100" step="5" value="0">
+                <br>
+                <br>
+
+                <label for="perc-gastos">Cambio % Gastos: </label><br>
+                <input id="perc-gastos" name="perc-gastos" type="number" placeholder="Puede ser cero o más..." min="-100" max="100" step="5" value="0">
+                <br>
+                <br>
+                
+            </div>
+
+            <div class="boton">
+
+                <button onclick="calcFlujoAnual()">Calcular</button>
+                
+            </div>
+
+        </main>
+
+        <section>
+
+            <article>
+
+                <p>Ingresos Totales:</p>
+                <br>
+                <p id="ing-totales"></p>
+
+            </article>
+    
+            <article>
+
+                <p>Gastos Totales:</p>
+                <br>
+                <p id="gastos-totales"></p>
+    
+            </article>
+
+            <article>
+
+                <p>Ahorros Totales:</p>
+                <br>
+                <p id="ahorro-total">
+
+            </article>
+            
+        </section>
+
+        <footer>
+
+        </footer>
+
+        <script src="./resources/js/flujo-fondos.js" type="text/javascript"></script>
+        
+    </body>
+
+</html>
+
+
+

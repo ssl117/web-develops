@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./resources/css/index.css" type="text/css" rel="stylesheet">
+    <title>Sebas Blog</title>
+</head>
+
+    <body>
+
+        <header>
+
+        </header>
+
+        <main>
+
+            <label for="inv_inicial">Inversion Inicial: </label><br>
+            <input id="inv_inicial" name="inv_inicial" type="number" placeholder="Puede ser cero o más..." min="0" step="100">
+            <br>
+            <br>
+            <label for="inv_mensual">Inversion Mensual: </label><br>
+            <input id="inv_mensual" name="inv_mensual" type="number" placeholder="Puede ser cero o más..." min="0" step="50">
+            <br>
+            <br>
+            <label for="tiempo_anual">Años: </label><br>
+            <input id="tiempo_anual" name="tiempo_anual" type="number" placeholder="Como mínimo un año..." min="1" step="1">
+            <br>
+            <br>
+            <button onclick="calcInvestMensual()">Calcular</button>
+
+        </main>
+
+        <section>
+
+            <article>
+
+                <p>Inversión Total:</p>
+                <br>
+                <p id="inv-total"></p>
+
+            </article>
+    
+            <article>
+
+                <p>Intereses Ganados:</p>
+                <br>
+                <p id="interes-total"></p>
+    
+            </article>
+
+            <article>
+
+                <p>Inversión Acumulada:</p>
+                <br>
+                <p id="inv-acumulada">
+
+            </article>
+    
+            <article>
+
+                <p>Rentabilidad Inversión:</p>
+                <br>
+                <p id="perc-rentabilidad"></p>
+    
+            </article>
+            
+        </section>
+
+        <footer>
+
+        </footer>
+
+        <script src="./resources/js/inv-lp-etf-seba.js" type="text/javascript"></script>
+        
+    </body>
+
+</html>
+
+
+
